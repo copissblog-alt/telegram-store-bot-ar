@@ -1,0 +1,12 @@
+{
+  "name": "telegram-store-bot-ar",
+  "version": "1.0.0",
+  "description": "Arabic Telegram store bot: catalog, cart, orders, owner panel. Node.js 22+, zero dependencies, built-in SQLite.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node --no-warnings=ExperimentalWarning bot.js",
+    "test": "node --no-warnings=ExperimentalWarning --test"
+  },
+  "engines": { "node": ">=22.13" },
+  "license": "MIT"
+}

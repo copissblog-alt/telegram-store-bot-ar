@@ -1,0 +1,22 @@
+# /etc/systemd/system/store-bot.service
+# sudo systemctl daemon-reload && sudo systemctl enable --now store-bot
+[Unit]
+Description=Telegram store bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=storebot
+WorkingDirectory=/opt/telegram-store-bot-ar
+ExecStart=/usr/bin/node --no-warnings=ExperimentalWarning bot.js
+Restart=always
+RestartSec=5
+# حماية: لا يكتب البوت إلا في مجلد data
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/telegram-store-bot-ar/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+{
+  "token": "123456789:AAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "owners": [111111111],
+  "store_name": "متجر العسل",
+  "welcome": "أهلاً بك! تصفح المنتجات واطلب من هنا مباشرة، والتوصيل داخل المدينة.",
+  "currency": "ريال",
+  "delivery_fee": 15,
+  "min_order": 50,
+  "payment_note": "الدفع عند الاستلام، أو تحويل بنكي إلى الآيبان SA00 0000 0000 0000 0000 0000 وإرسال صورة الإيصال هنا.",
+  "utc_offset": 3,
+  "db": "data/store.sqlite"
+}
